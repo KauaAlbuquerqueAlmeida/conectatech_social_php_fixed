@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($res['error'])) $error = $res['error'];
     else {
         $_SESSION['flash_success'] = 'Registrado com sucesso. Faça login.';
-        header('Location: /login.php');
+        header('Location: ./login.php');
         exit;
     }
 }
@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <label class="form-label mt-2">Senha</label>
       <input name="password" type="password" class="form-control" required>
       <div class="mt-3 d-flex justify-content-between">
-        <a href="/login.php">Já tem conta?</a>
+        <a href="./login.php">Já tem conta?</a>
         <button class="btn btn-primary">Registrar</button>
       </div>
     </form>

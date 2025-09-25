@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__DIR__) . './src/AuthController.php';
+require_once dirname(__DIR__) . '/src/AuthController.php';
 if (session_status() == PHP_SESSION_NONE) session_start();
 $error = null;
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
